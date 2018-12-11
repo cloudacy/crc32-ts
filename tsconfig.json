@@ -4,7 +4,8 @@
       "sourceMap": true,          // allow sourcemap support
       "strictNullChecks": true,   // enable strict null checks as a best practice
       "target": "esnext",            // specify ECMAScript target version
-      "noImplicitAny": true
+      "noImplicitAny": true,
+      "declaration": true
   },
   "include": [
       "./src/"

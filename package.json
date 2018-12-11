@@ -1,0 +1,21 @@
+{
+  "name": "crc32-ts",
+  "version": "0.1.0",
+  "description": "Another CRC32 generator made with TypeScript",
+  "main": "src/index.ts",
+  "author": "Dominik Kuen <d.kuen@averi.at>, Patrick Kuen <p.kuen@averi.at>",
+  "scripts": {
+    "test": "mocha -r ts-node/register ./test/*.spec.ts",
+    "pretty": "prettier --write 'src/**/*.{js,json}'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.12",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2"
+  }
+}

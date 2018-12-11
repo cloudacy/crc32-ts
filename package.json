@@ -1,6 +1,6 @@
 {
   "name": "crc32-ts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Another CRC32 generator made with TypeScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

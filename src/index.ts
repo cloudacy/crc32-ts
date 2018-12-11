@@ -1,5 +1,6 @@
 'use strict'
 
+// prettier-ignore
 export let table = [
             0,  1996959894,  -301047508, -1727442502,   124634137,  1886057615,  -379345611, -1637575261,
     249268274,  2044508324,  -522852066, -1747789432,   162941995,  2125561021,  -407360249, -1866523247,
@@ -38,32 +39,31 @@ export let table = [
 export default function crc32(buffer: Buffer, unsigned: boolean = false, seed: number = 0) {
   let crc = seed ^ -1
   let length = buffer.length - 15
-  
+
   let i = 0
 
-  while(i < length) {
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
-    crc = ( crc >>> 8 ) ^ table[ 0xFF & ( crc ^ buffer[ i++ ] ) ]
+  while (i < length) {
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
+    crc = (crc >>> 8) ^ table[0xff & (crc ^ buffer[i++])]
   }
 
   length += 15
 
-  while(i < length)
-    crc = ( crc >>> 8 ) ^ table[ ( crc ^ buffer[ i++ ] ) & 0xFF ]
+  while (i < length) crc = (crc >>> 8) ^ table[(crc ^ buffer[i++]) & 0xff]
 
   const res = crc ^ -1
 

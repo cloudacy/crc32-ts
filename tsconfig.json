@@ -3,7 +3,8 @@
       "outDir": "./dist/",        // path to output directory
       "sourceMap": true,          // allow sourcemap support
       "strict": true,
-      "target": "es5",            // specify ECMAScript target version
+      "target": "esnext",            // specify ECMAScript target version
+      "module": "commonjs",
       "noImplicitAny": true,
       "declaration": true
   },

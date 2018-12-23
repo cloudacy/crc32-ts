@@ -2,8 +2,8 @@
   "name": "crc32-ts",
   "version": "1.0.1",
   "description": "Another CRC32 generator made with TypeScript",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Dominik Kuen <d.kuen@averi.at>, Patrick Kuen <p.kuen@averi.at>",
   "scripts": {
     "build": "tsc",

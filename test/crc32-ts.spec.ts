@@ -1,7 +1,8 @@
 'use strict'
 
 import {expect} from 'chai'
-import crc32 from '../src';
+
+import crc32 from '../src'
 
 describe('Right checksums', () => {
   it('should output right checksums', () => {

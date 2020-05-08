@@ -5,7 +5,7 @@
   "main": "dist/commonjs/index.js",
   "module": "dist/es6/index.js",
   "types": "dist/es6/index.d.ts",
-  "author": "Dominik Kuen <d.kuen@averi.at>, Patrick Kuen <p.kuen@averi.at>",
+  "author": "Dominik Kuen <d.kuen@cloudacy.com>, Patrick Kuen <p.kuen@cloudacy.com>",
   "sideEffects": false,
   "publishConfig": {
     "registry": "https://cpm.cloudacy.io"

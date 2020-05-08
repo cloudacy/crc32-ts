@@ -14,7 +14,7 @@
     "build": "tsc -m ES6 --outDir dist/es6 && tsc -m commonjs --outDir dist/commonjs",
     "test": "mocha -r ts-node/register ./test/*.spec.ts",
     "pretty": "prettier --write src/* test/*",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "license": "MIT",
   "devDependencies": {

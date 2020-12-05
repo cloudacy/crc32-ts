@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.table = void 0;
 // prettier-ignore
 exports.table = [
     0, 1996959894, -301047508, -1727442502, 124634137, 1886057615, -379345611, -1637575261,

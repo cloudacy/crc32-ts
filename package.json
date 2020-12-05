@@ -7,25 +7,21 @@
   "types": "dist/es6/index.d.ts",
   "author": "Dominik Kuen <d.kuen@cloudacy.com>, Patrick Kuen <p.kuen@cloudacy.com>",
   "sideEffects": false,
-  "publishConfig": {
-    "registry": "https://cpm.cloudacy.io"
-  },
   "scripts": {
     "build": "tsc -m ES6 --outDir dist/es6 && tsc -m commonjs --outDir dist/commonjs",
     "test": "mocha -r ts-node/register ./test/*.spec.ts",
-    "pretty": "prettier --write src/* test/*",
-    "prepare": "pnpm run build"
+    "pretty": "prettier --write src/* test/*"
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.2.11",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^13.13.5",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.10",
     "chai": "^4.2.0",
-    "mocha": "^7.1.2",
-    "prettier": "^2.0.5",
-    "ts-node": "^8.10.1",
-    "typescript": "^3.8.3"
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.0",
+    "typescript": "^4.1.2"
   },
   "prettier": {
     "printWidth": 999,

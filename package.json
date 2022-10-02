@@ -2,13 +2,13 @@
   "name": "crc32-ts",
   "version": "1.0.6",
   "description": "Another CRC32 generator made with TypeScript",
-  "main": "dist/commonjs/index.js",
-  "module": "dist/es6/index.js",
-  "types": "dist/es6/index.d.ts",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
   "author": "Dominik Kuen <d.kuen@cloudacy.com>, Patrick Kuen <p.kuen@cloudacy.com>",
   "sideEffects": false,
   "scripts": {
-    "build": "tsc -m ES6 --outDir dist/es6 && tsc -m commonjs --outDir dist/commonjs",
+    "build": "tsc",
     "test": "mocha -r ts-node/register ./test/*.spec.ts",
     "pretty": "prettier --write src/* test/*"
   },
@@ -33,5 +33,8 @@
     "bracketSpacing": false,
     "arrowParens": "avoid",
     "proseWrap": "never"
+  },
+  "engines": {
+    "node": ">=14.16"
   }
 }

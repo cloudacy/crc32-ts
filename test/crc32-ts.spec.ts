@@ -1,6 +1,6 @@
 import {expect} from 'chai'
 
-import crc32 from '../src'
+import crc32 from '../src/index.js'
 
 describe('Right checksums', () => {
   it('should output right checksums', () => {

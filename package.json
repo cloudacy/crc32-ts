@@ -9,7 +9,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register ./test/*.spec.ts",
+    "test": "mocha ./test/*.spec.ts",
     "pretty": "prettier --write src/* test/*"
   },
   "license": "MIT",
